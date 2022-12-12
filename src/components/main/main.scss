@@ -1,0 +1,138 @@
+.main-container {
+  height: calc(100% - 5em);
+  display: flex;
+}
+.main-section-left {
+  width: 35%;
+  height: 100%;
+  box-sizing: border-box;
+  padding-top: 10%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 1rem;
+}
+.main-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.main-header {
+  height: 5rem;
+  padding: 0;
+  margin: 0;
+  color: $color_purple;
+  font-weight: bold;
+  font-size: 5.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.main-text {
+  color: $color_dark_gray;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.main-text:nth-child(1) {
+  height: 3.5rem;
+  font-size: 4rem;
+  font-weight: 300;
+}
+.main-text:nth-child(3) {
+  height: 4rem;
+  font-size: 4.5rem;
+  font-weight: bold;
+}
+.main-text:nth-child(4) {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.main-button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  user-select: none;
+}
+.main-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  font-size: 1.5rem;
+  height: 3rem;
+  transition: 80ms;
+  cursor: pointer;
+}
+
+.main-button:nth-child(1) {
+  background-color: $color_purple;
+  color: $color_white;
+  width: 40%;
+}
+.main-button:nth-child(1):hover {
+  color: $color_dark_gray;
+  background-color: $color_purple;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 6px 2px $color_dark_gray;
+}
+.main-button:nth-child(2) {
+  box-sizing: border-box;
+  border: 2.5px solid$color_purple;
+  color: $color_gray;
+  width: 40%;
+}
+.main-button:nth-child(2):hover {
+  background-color: $color_purple;
+  color: $color_white;
+}
+.main-social-media {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+.main-media {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+.main-media:nth-child(1) {
+  background-image: url($whats_app);
+}
+.main-media:nth-child(2) {
+  background-image: url($facebook);
+}
+.main-media:nth-child(3) {
+  background-image: url($instagram);
+}
+.main-media:nth-child(4) {
+  background-image: url($twitter);
+}
+.main-section-right {
+  width: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-image {
+  width: 80%;
+  height: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.switch-lamp-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.main-lamp {
+  width: 16px;
+  height: 16px;
+  background-color: $color_purple;
+}

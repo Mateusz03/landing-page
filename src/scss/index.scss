@@ -1,0 +1,29 @@
+@import "./configuration.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  font-family: "Baloo Paaji 2", cursive;
+}
+.App {
+  width: 100%;
+  height: 100vh;
+  background: url($triangles), url($background);
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, cover;
+  background-position: center top;
+  box-sizing: border-box;
+  padding: 0% 15% 0% 15%;
+}
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 3% 0% 3% 5%;
+  border-radius: 0px 5px 0px 0px;
+  box-shadow: 20px 0 20px -20px $color_dark_gray,
+    -20px 0 20px -20px $color_dark_gray;
+}
+@import "../components/header/header.scss";
+@import "../components/main/main.scss";
