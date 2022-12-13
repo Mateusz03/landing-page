@@ -1,6 +1,6 @@
 import React from "react";
 import { useContext } from "react";
-import { CurrentNav } from "../../pages";
+import { CurrentNav } from "../../pages/index.js";
 
 const Header = () => {
   const { item, setItem } = useContext(CurrentNav);
@@ -17,7 +17,7 @@ const Header = () => {
               borderTop: item === "Home" ? "4px solid white" : "none",
             }}
             onClick={() => {
-              setItem("Home");
+              console.log(item);
             }}
           >
             <p className="text"> Home</p>

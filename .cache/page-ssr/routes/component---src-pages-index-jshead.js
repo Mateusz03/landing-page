@@ -15,8 +15,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _pages__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../pages */ "./src/pages/index.js");
-
+/* harmony import */ var _pages_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../pages/index.js */ "./src/pages/index.js");
 
 
 
@@ -24,7 +23,7 @@ const Header = () => {
   const {
     item,
     setItem
-  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(_pages__WEBPACK_IMPORTED_MODULE_1__.CurrentNav);
+  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(_pages_index_js__WEBPACK_IMPORTED_MODULE_1__.CurrentNav);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "header-container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -205,7 +204,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const CurrentNav = /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_0__.createContext)(null);
+let useItem = "Home";
+const CurrentNav = /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_0__.createContext)({
+  item: useItem,
+  setItem: e => {
+    useItem = e;
+  }
+});
 function App() {
   const {
     0: item,
@@ -248,7 +253,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const CurrentNav = /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_0__.createContext)(null);
+let useItem = "Home";
+const CurrentNav = /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_0__.createContext)({
+  item: useItem,
+  setItem: e => {
+    useItem = e;
+  }
+});
 function App() {
   const {
     0: item,
